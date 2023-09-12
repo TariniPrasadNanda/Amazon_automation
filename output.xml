@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20230912 15:12:44.210" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon Search" source="C:\Users\HP\PycharmProjects\Robot_framework\amazon-automation\tests\amazon_search.robot">
+<test id="s1-t1" name="perform amazon search" line="24">
+<kw name="open browser with URL">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230912 15:12:44.607" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<status status="PASS" starttime="20230912 15:12:44.606" endtime="20230912 15:12:53.128"/>
+</kw>
+<status status="PASS" starttime="20230912 15:12:44.605" endtime="20230912 15:12:53.128"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230912 15:12:54.131" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230912 15:12:53.130" endtime="20230912 15:12:54.131"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230912 15:12:54.131" endtime="20230912 15:12:54.335"/>
+</kw>
+<kw name="set input on text box">
+<arg>${search_bar}</arg>
+<arg>${input_text}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230912 15:12:54.339" level="INFO">Typing text 'mobile' into text field '//input[@id='twotabsearchtextbox']'.</msg>
+<status status="PASS" starttime="20230912 15:12:54.337" endtime="20230912 15:12:55.073"/>
+</kw>
+<status status="PASS" starttime="20230912 15:12:54.336" endtime="20230912 15:12:55.073"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230912 15:12:56.076" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230912 15:12:55.074" endtime="20230912 15:12:56.076"/>
+</kw>
+<kw name="push button">
+<arg>${search_button}</arg>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230912 15:12:56.079" level="INFO">Clicking button '//input[@id='nav-search-submit-button']'.</msg>
+<status status="PASS" starttime="20230912 15:12:56.078" endtime="20230912 15:13:00.405"/>
+</kw>
+<status status="PASS" starttime="20230912 15:12:56.077" endtime="20230912 15:13:00.405"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230912 15:13:05.406" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230912 15:13:00.406" endtime="20230912 15:13:05.406"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230912 15:13:05.406" endtime="20230912 15:13:07.938"/>
+</kw>
+<status status="PASS" starttime="20230912 15:12:44.604" endtime="20230912 15:13:07.938"/>
+</test>
+<status status="PASS" starttime="20230912 15:12:44.213" endtime="20230912 15:13:07.940"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon Search">Amazon Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
